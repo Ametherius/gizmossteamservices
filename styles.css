@@ -349,20 +349,40 @@ body {
 }
 
 /* Contact Form */
-.contact-form {
-    background: white;
+.quote-container {
+    background: linear-gradient(to right, rgba(201, 140, 51, 0.7), rgba(201, 140, 51, 0.8)),
+                url('./img/backgroundimage.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: var(--spacing-lg);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+ 
+
+.needs-validation {
+    background: rgba(255, 255, 255, 0.1);
     padding: var(--spacing-xl);
     border-radius: var(--border-radius);
+    border: 2px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.card {
+    background: transparent !important;
+    border: none;
 }
 
 .form-control {
+    background: rgba(255, 255, 255, 0.9);
     padding: var(--spacing-md);
     border-radius: var(--border-radius);
     border: 1px solid #ddd;
 }
 
 .form-control:focus {
+    background: rgba(255, 255, 255, 1);
     border-color: var(--secondary-color);
     box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
 }
