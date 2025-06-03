@@ -67,12 +67,14 @@ body {
     background: linear-gradient(to right, rgba(201, 140, 51, 0.7), rgba(201 , 140, 51, 0.8)),
                 url('./img/backgroundimage.png');                
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: var(--primary-color);
-    padding-top: 80px;
+    padding-top: 120px;
+    margin-top: 76px;
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .hero .container {
@@ -81,14 +83,20 @@ body {
 
 .hero h1 {
     margin-bottom: var(--spacing-lg);
+    padding-left: var(--spacing-md);
 }
 
 .hero h3 {
     margin-bottom: var(--spacing-xl);
+    padding-left: var(--spacing-md);
 }
 
 .hero span {
     color: var(--primary-color);
+}
+
+.hero .btn-primary {
+    margin-left: var(--spacing-md);
 }
 
 /* Page Header */
