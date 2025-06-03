@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Gizmos Steam Services</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/backgroundimage.png" alt="Gizmos Steam Services" class="logo" style="width: 125px;"> Gizmos Steam Services
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="gallery.html">Gallery</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="testimonials.html">Testimonials</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="quote.html">Request a Quote</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gallery Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="text-center">Before & After Gallery</h1>
+            <p class="text-center lead">See the amazing transformations we've achieved for our clients</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="gallery-filter text-center">
+                <button class="btn btn-outline-primary active" data-filter="all">All</button>
+                <button class="btn btn-outline-primary" data-filter="carpet">Carpet</button>
+                <button class="btn btn-outline-primary" data-filter="upholstery">Upholstery</button>
+                <button class="btn btn-outline-primary" data-filter="house">House</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Carpet Cleaning -->
+                <div class="col-md-6 gallery-item" data-category="carpet">
+                    <div class="before-after-card">
+                        <div class="before-after-container">
+                            <div class="before">
+                                <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Before" class="img-fluid">
+                                <span class="label">Before</span>
+                            </div>
+                            <div class="after">
+                                <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="After" class="img-fluid">
+                                <span class="label">After</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5>Carpet Deep Cleaning</h5>
+                            <p>Complete transformation of heavily soiled carpet</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upholstery Cleaning -->
+                <div class="col-md-6 gallery-item" data-category="upholstery">
+                    <div class="before-after-card">
+                        <div class="before-after-container">
+                            <div class="before">
+                                <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Before" class="img-fluid">
+                                <span class="label">Before</span>
+                            </div>
+                            <div class="after">
+                                <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="After" class="img-fluid">
+                                <span class="label">After</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5>Sofa Restoration</h5>
+                            <p>Professional cleaning of stained upholstery</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- House Cleaning -->
+                <div class="col-md-6 gallery-item" data-category="house">
+                    <div class="before-after-card">
+                        <div class="before-after-container">
+                            <div class="before">
+                                <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Before" class="img-fluid">
+                                <span class="label">Before</span>
+                            </div>
+                            <div class="after">
+                                <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="After" class="img-fluid">
+                                <span class="label">After</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5>Kitchen Deep Clean</h5>
+                            <p>Complete kitchen transformation</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more gallery items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-light">
+        <div class="container text-center">
+            <h2>Ready to Transform Your Space?</h2>
+            <p class="lead mb-4">Book our professional cleaning services today</p>
+            <a href="contact.html" class="btn btn-primary btn-lg">Get a Free Quote</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Gizmos Steam Services</h5>
+                    <p>Professional steam cleaning solutions for your home and business.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <!-- <li><a href="testimonials.html">Testimonials</a></li> -->
+                        <li><a href="quote.html">Request a Quote</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-phone"></i> (250) 507-3925</li>
+                        <li><i class="fas fa-envelope"></i> gizmossteamservices@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 Gizmos Steam Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        // Gallery filter functionality
+        document.querySelectorAll('.gallery-filter button').forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                document.querySelectorAll('.gallery-filter button').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                const filter = button.getAttribute('data-filter');
+                
+                document.querySelectorAll('.gallery-item').forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

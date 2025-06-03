@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Quote - Gizmos Steam Services</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/backgroundimage.png" alt="Gizmos Steam Services" class="logo" style="width: 125px;"> Gizmos Steam Services
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="testimonials.html">Testimonials</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="quote.html">Request a Quote</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Quote Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="text-center">Request a Quote</h1>
+            <p class="text-center lead">Get a free, no-obligation quote for our professional cleaning services</p>
+        </div>
+    </section>
+
+    <!-- Quote Form -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow">
+                        <div class="card-body p-4">
+                            <form id="quoteForm" class="needs-validation" novalidate>
+                                <!-- Personal Information -->
+                                <h4 class="mb-4">Personal Information</h4>
+                                <div class="row g-3 mb-4">
+                                    <div class="col-md-6">
+                                        <label for="firstName" class="form-label">First Name *</label>
+                                        <input type="text" class="form-control" id="firstName" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="lastName" class="form-label">Last Name *</label>
+                                        <input type="text" class="form-control" id="lastName" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email *</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label">Phone *</label>
+                                        <input type="tel" class="form-control" id="phone" required>
+                                    </div>
+                                </div>
+
+                                <!-- Service Selection -->
+                                <h4 class="mb-4">Service Details</h4>
+                                <div class="mb-4">
+                                    <label class="form-label">Select Services *</label>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="carpetCleaning">
+                                                <label class="form-check-label" for="carpetCleaning">
+                                                    Carpet Cleaning
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="upholsteryCleaning">
+                                                <label class="form-check-label" for="upholsteryCleaning">
+                                                    Upholstery Cleaning
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="houseCleaning">
+                                                <label class="form-check-label" for="houseCleaning">
+                                                    House Cleaning
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="commercialCleaning">
+                                                <label class="form-check-label" for="commercialCleaning">
+                                                    Commercial Cleaning
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Property Details -->
+                                <div class="mb-4">
+                                    <label for="propertyType" class="form-label">Property Type *</label>
+                                    <select class="form-select" id="propertyType" required>
+                                        <option value="">Select property type</option>
+                                        <option value="residential">Residential</option>
+                                        <option value="commercial">Commercial</option>
+                                        <option value="industrial">Industrial</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label for="squareFootage" class="form-label">Approximate Square Footage *</label>
+                                    <input type="number" class="form-control" id="squareFootage" required>
+                                </div>
+
+                                <!-- Preferred Date/Time -->
+                                <h4 class="mb-4">Preferred Schedule</h4>
+                                <div class="row g-3 mb-4">
+                                    <div class="col-md-6">
+                                        <label for="preferredDate" class="form-label">Preferred Date *</label>
+                                        <input type="date" class="form-control" id="preferredDate" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="preferredTime" class="form-label">Preferred Time *</label>
+                                        <select class="form-select" id="preferredTime" required>
+                                            <option value="">Select time</option>
+                                            <option value="morning">Morning (8AM - 12PM)</option>
+                                            <option value="afternoon">Afternoon (12PM - 4PM)</option>
+                                            <option value="evening">Evening (4PM - 8PM)</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Additional Information -->
+                                <div class="mb-4">
+                                    <label for="additionalInfo" class="form-label">Additional Information</label>
+                                    <textarea class="form-control" id="additionalInfo" rows="4" placeholder="Please provide any additional details about your cleaning needs..."></textarea>
+                                </div>
+
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg">Request Quote</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Gizmos Steam Services</h5>
+                    <p>Professional steam cleaning solutions for your home and business.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <!-- <li><a href="testimonials.html">Testimonials</a></li> -->
+                        <li><a href="quote.html">Request a Quote</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-phone"></i> (250) 507-3925</li>
+                        <li><i class="fas fa-envelope"></i> gizmossteamservices@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 Gizmos Steam Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        // Form validation
+        (function () {
+            'use strict'
+            var forms = document.querySelectorAll('.needs-validation')
+            Array.prototype.slice.call(forms).forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+
+        // Set minimum date for date picker to today
+        document.getElementById('preferredDate').min = new Date().toISOString().split('T')[0];
+    </script>
+</body>
+</html> 
