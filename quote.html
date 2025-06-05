@@ -14,7 +14,7 @@
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
+        <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
                 <img src="img/backgroundimage.png" alt="Gizmos Steam Services" class="logo" style="width: 75px;"> Gizmos Steam Services
             </a>
@@ -27,7 +27,7 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
+                        <a class="nav-link" href="what-we-steam.html">What We Steam</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="gallery.html">Gallery</a>
@@ -42,15 +42,6 @@
             </div>
         </div>
     </nav>
-
-    <!-- Quote Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1 class="text-center">Request a Quote</h1>
-            <p class="text-center lead">Get a free, no-obligation quote for our professional cleaning services</p>
-        </div>
-    </section>
-
 
     <!-- Quote Form -->
     <section class="py-5 quote-container">
@@ -185,9 +176,12 @@
                                     <input type="number" class="form-control" id="rating" placeholder="1-5 stars" min="1" max="5" required>
                                 </div>
                             </div>
-                                <div class="col-md-12">
+                                <div class="col-md-12 mb-4">
                                     <label for="review" class="form-label">Review *</label>
                                     <textarea class="form-control" id="review" rows="4" required></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg">Submit Review</button>
                                 </div>
                             </div>
                         </form>

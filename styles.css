@@ -8,6 +8,22 @@
     --text-color: #333;
     --text-light: #666;
     --transparent-color: rgba(201, 140, 51, 0.5);
+
+    /* Typography Variables */
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 3rem;
+
+    --font-weight-sm: 300;
+    --font-weight-std: 400;
+    --font-weight-md: 500;
+    --font-weight-lg: 600;
+    --font-weight-xl: 700;
+    --font-weight-xxl: 800;
+    --font-weight-xxxl: 900;
     
     /* Spacing Variables */
     --spacing-xs: 0.25rem;
@@ -15,6 +31,7 @@
     --spacing-md: 1rem;
     --spacing-lg: 2rem;
     --spacing-xl: 3rem;
+    --spacing-xxl: 4rem;
     
     /* Border Radius */
     --border-radius: 8px;
@@ -97,6 +114,16 @@ body {
 
 .hero .btn-primary {
     margin-left: var(--spacing-md);
+}
+
+/* About Section */
+.about-section {
+    background: linear-gradient(to right, rgba(201, 140, 51, 0.7), rgba(201, 140, 51, 0.8));
+}
+
+.about-card {
+    padding: var(--spacing-xxl);
+    border-radius: var(--border-radius);
 }
 
 /* Page Header */
@@ -254,6 +281,7 @@ body {
 
 /* Gallery Styles */
 .gallery-filter {
+    margin-top: 100px;
     margin-bottom: var(--spacing-lg);
 }
 
@@ -262,8 +290,9 @@ body {
 }
 
 .before-after-card {
-    background: white;
-    border-radius: var(--border-radius);
+    background: var(--transparent-color);
+    border-radius: 20px;
+    border: 1px solid var(--secondary-color);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: var(--transition-fast);
@@ -364,8 +393,49 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     padding: var(--spacing-lg);
+    margin-top: 80px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+.residential-card {
+    background: var(--transparent-color);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.residential-card h4 {
+    font-weight: var(--font-weight-xl);
+}
+
+.residential-list li{
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-md);
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-lg);
+}
+
+.auto-list li{
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-md);
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-xl);
+}
+
+.specialty-list li{
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-md);
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-lg);
+}
+
+.commercial-list li{
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-md);
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-xl);
+}
+
  
 
 .needs-validation {
@@ -393,6 +463,21 @@ body {
     background: rgba(255, 255, 255, 1);
     border-color: var(--secondary-color);
     box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+/* What We Steam Section */
+.what-we-steam-section {
+    padding: var(--spacing-xxl);
+}
+
+.what-we-steam-section h1 {
+    color: var(--primary-color);
+    font-weight: var(--font-weight-xl);
+    font-size: var(--font-size-xxl);
+}
+
+.what-we-steam-section h5 {
+    color: var(--primary-color);
 }
 
 /* Footer */

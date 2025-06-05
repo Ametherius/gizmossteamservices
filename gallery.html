@@ -10,11 +10,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: linear-gradient(to right, rgba(201, 140, 51, 0.7), rgba(201, 140, 51, 0.8));
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
+        <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
                 <img src="img/backgroundimage.png" alt="Gizmos Steam Services" class="logo" style="width: 75px;"> Gizmos Steam Services
             </a>
@@ -27,7 +32,7 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
+                        <a class="nav-link" href="what-we-steam.html">What We Steam</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="gallery.html">Gallery</a>
@@ -43,22 +48,16 @@
         </div>
     </nav>
 
-    <!-- Gallery Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1 class="text-center">Before & After Gallery</h1>
-            <p class="text-center lead">See the amazing transformations we've achieved for our clients</p>
-        </div>
-    </section>
 
     <!-- Gallery Filter -->
-    <section class="py-4 bg-light">
-        <div class="container">
+    <section class="pt-5">
+        <div class="container-fluid">
             <div class="gallery-filter text-center">
                 <button class="btn btn-outline-primary active" data-filter="all">All</button>
                 <button class="btn btn-outline-primary" data-filter="carpet">Carpet</button>
                 <!-- <button class="btn btn-outline-primary" data-filter="upholstery">Upholstery</button> -->
                 <button class="btn btn-outline-primary" data-filter="house">House</button>
+                <button class="btn btn-outline-primary" data-filter="floors">Floors</button>
             </div>
         </div>
     </section>
@@ -87,36 +86,18 @@
                     </div>
                 </div>
 
-                <!-- Upholstery Cleaning
-                <div class="col-md-6 gallery-item" data-category="upholstery">
-                    <div class="before-after-card">
-                        <div class="before-after-container">
-                            <div class="before">
-                                <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Before" class="img-fluid">
-                                <span class="label">Before</span>
-                            </div>
-                            <div class="after">
-                                <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="After" class="img-fluid">
-                                <span class="label">After</span>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5>Sofa Restoration</h5>
-                            <p>Professional cleaning of stained upholstery</p>
-                        </div>
-                    </div>
-                </div> -->
+               
 
                 <!-- House Cleaning -->
                 <div class="col-md-6 gallery-item" data-category="house">
                     <div class="before-after-card">
                         <div class="before-after-container">
                             <div class="before">
-                                <img src="img/BBQBefore.jpeg" alt="Before" class="img-fluid">
+                                <img src="img/bbqBeforee.jpeg" alt="Before" class="img-fluid">
                                 <span class="label">Before</span>
                             </div>
                             <div class="after">
-                                <img src="img/BBGAfter.jpeg" alt="After" class="img-fluid">
+                                <img src="img/bbqAfterr.jpeg" alt="After" class="img-fluid">
                                 <span class="label">After</span>
                             </div>
                         </div>
@@ -127,13 +108,31 @@
                     </div>
                 </div>
 
-                <!-- Add more gallery items as needed -->
+                <!-- Floor Cleaning -->
+                <div class="col-md-6 gallery-item" data-category="floors">
+                    <div class="before-after-card">
+                        <div class="before-after-container">
+                            <div class="before">
+                                <img src="img/floorBefore.jpeg" alt="Before" class="img-fluid">
+                                <span class="label">Before</span>
+                            </div>
+                            <div class="after">
+                                <img src="img/floorAfter.jpeg" alt="After" class="img-fluid">
+                                <span class="label">After</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5>Floor Cleaning</h5>
+                            <p>Floor cleaned, sanitized, and shined</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Call to Action -->
-    <section class="py-5 bg-light">
+    <section class="py-5">
         <div class="container text-center">
             <h2>Ready to Transform Your Space?</h2>
             <p class="lead mb-4">Book our professional cleaning services today</p>
