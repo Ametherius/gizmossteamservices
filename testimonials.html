@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - Gizmos Steam Services</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="background-gradient"></div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark d-none d-lg-block fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/backgroundimage.png" alt="Gizmos Steam Services" class="logo" style="width: 75px">Gizmo's Steam Services
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="what-we-steam.html">What We Steam</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gizmos-steamer.html">Gizmo's Steamer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-secondary" href="testimonials.html">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quote.html">Request a Quote</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="review.html">Leave a Review</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid d-lg-none d-sm-block mobile-navbar fixed-top">
+        <button class="navbar-toggler d-lg-none d-sm-block" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Gizmo's Steam Services</h5>
+            <button type="button" class="bg-transparent border-0" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="fa-solid text-white fa-xmark"></i>
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active text-secondary" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="what-we-steam.html">What We Steam</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gizmos-steamer.html">Gizmo's Steamer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="quote.html">Request a Quote</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="review.html">Leave a Review</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">What Our Clients Say</h2>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-interval="false">
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <!-- Carousel Page 1 -->
+                    <div class="carousel-item active">
+                        <div class="row mb-4">
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 bg-white">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                                        <p class="card-text text-secondary">"The attention to detail and professionalism of Gizmos Steam Services is unmatched. They went above and beyond our expectations."</p>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div>
+                                                <h5 class="mb-0">Michael Thompson</h5>
+                                                <small class="text-muted">Sooke</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 bg-white">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                                        <p class="card-text text-secondary">"Absolutely thrilled with the results! Our carpets look brand new and the whole house feels fresher. The team was friendly and efficient. Best steam cleaning in Victoria!"</p>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div>
+                                                <h5 class="mb-0">Aisha Patel</h5>
+                                                <small class="text-muted">Metchosin</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 bg-white">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                                        <p class="card-text text-secondary">"Gizmos Steam Services did an amazing job on our office chairs and carpets. Prompt, professional, and local to Victoria. Highly recommend for any business!"</p>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div>
+                                                <h5 class="mb-0">Gurpreet Singh</h5>
+                                                <small class="text-muted">Langford</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 bg-white">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                                        <p class="card-text text-secondary">"We had our rental property steam cleaned before new tenants moved in. The difference was incredible! Thank you for your excellent service in Victoria."</p>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div>
+                                                <h5 class="mb-0">Sophie Martin</h5>
+                                                <small class="text-muted">Victoria</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 bg-white">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                                        <p class="card-text text-secondary">"Our area rugs and couches look fantastic after a visit from Gizmos Steam Services. Friendly staff and great results. Will use again!"</p>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div>
+                                                <h5 class="mb-0">Rachel Green</h5>
+                                                <small class="text-muted">Saanich</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 bg-white">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                                        <p class="card-text text-secondary">"Prompt, reliable, and very thorough. Our mattresses and carpets have never been cleaner. Highly recommend Gizmos for anyone in Victoria!"</p>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div>
+                                                <h5 class="mb-0">Tom Baker</h5>
+                                                <small class="text-muted">Esquimalt</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 bg-white">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                                        <p class="card-text text-secondary">"Gizmos Steam Services exceeded my expectations. The team was courteous and efficient. Will definitely recommend to friends and family!"</p>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div>
+                                                <h5 class="mb-0">Juan Martinez</h5>
+                                                <small class="text-muted">Victoria</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 bg-white">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                                        <p class="card-text text-secondary">"Very happy with the service. The team was on time and did a fantastic job. Will use again!"</p>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div>
+                                                <h5 class="mb-0">Fatima Al-Farsi</h5>
+                                                <small class="text-muted">Sooke</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 bg-white">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                                        <p class="card-text text-secondary">"The best steam cleaning service in the area. Professional, friendly, and thorough."</p>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div>
+                                                <h5 class="mb-0">Yuki Tanaka</h5>
+                                                <small class="text-muted">Metchosin</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carousel Page 2 -->
+                    <div class="carousel-item">
+                        <div class="row mb-4">
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 bg-white">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                                        <p class="card-text text-secondary">"Incredible results! My upholstery looks brand new. Thank you Gizmos!"</p>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div>
+                                                <h5 class="mb-0">Chen Wei</h5>
+                                                <small class="text-muted">Langford</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 bg-white">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                                        <p class="card-text text-secondary">"The team was very professional and did a great job on our carpets. Highly recommend!"</p>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div>
+                                                <h5 class="mb-0">Olga Ivanova</h5>
+                                                <small class="text-muted">Esquimalt</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 bg-white">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                                        <p class="card-text text-secondary">"Very pleased with the service. The staff was friendly and efficient."</p>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div>
+                                                <h5 class="mb-0">Ahmed El-Sayed</h5>
+                                                <small class="text-muted">Saanich</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 bg-white">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                                        <p class="card-text text-secondary">"Gizmos Steam Services is my go-to for all my cleaning needs. Always reliable!"</p>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div>
+                                                <h5 class="mb-0">Priya Nair</h5>
+                                                <small class="text-muted">Victoria</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 bg-white">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                                        <p class="card-text text-secondary">"The results speak for themselves. My home feels so much cleaner!"</p>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div>
+                                                <h5 class="mb-0">Linh Nguyen</h5>
+                                                <small class="text-muted">Sooke</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 bg-white">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                                        <p class="card-text text-secondary">"Great service and friendly staff. Will definitely use again."</p>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div>
+                                                <h5 class="mb-0">Sofia Rossi</h5>
+                                                <small class="text-muted">Metchosin</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 bg-white">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                                        <p class="card-text text-secondary">"The team was punctual and did a thorough job. Highly recommend!"</p>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div>
+                                                <h5 class="mb-0">Jamal Johnson</h5>
+                                                <small class="text-muted">Langford</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 bg-white">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                                        <p class="card-text text-secondary">"Excellent service and attention to detail. Will recommend to others."</p>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div>
+                                                <h5 class="mb-0">Maria Garcia</h5>
+                                                <small class="text-muted">Esquimalt</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 bg-white">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                                        <p class="card-text text-secondary">"Very happy with the results. The team was friendly and professional."</p>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div>
+                                                <h5 class="mb-0">Hannah Kim</h5>
+                                                <small class="text-muted">Saanich</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carousel Page 3 -->
+                    <div class="carousel-item">
+                        <div class="row mb-4">
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 bg-white">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                                        <p class="card-text text-secondary">"Gizmos Steam Services is the best! My carpets have never looked better."</p>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div>
+                                                <h5 class="mb-0">Oluwaseun Adeyemi</h5>
+                                                <small class="text-muted">Victoria</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 bg-white">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                                        <p class="card-text text-secondary">"The team was efficient and did a great job. Will use again!"</p>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div>
+                                                <h5 class="mb-0">An Nguyen</h5>
+                                                <small class="text-muted">Sooke</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 bg-white">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                                        <p class="card-text text-secondary">"Very professional and friendly staff. Highly recommend!"</p>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div>
+                                                <h5 class="mb-0">Elena Petrova</h5>
+                                                <small class="text-muted">Metchosin</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 bg-white">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                                        <p class="card-text text-secondary">"The results were amazing. My home feels so much cleaner!"</p>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div>
+                                                <h5 class="mb-0">Mohammed Al-Mansour</h5>
+                                                <small class="text-muted">Langford</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 bg-white">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                                        <p class="card-text text-secondary">"Great experience from start to finish. Will recommend to friends."</p>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div>
+                                                <h5 class="mb-0">Isabella Moretti</h5>
+                                                <small class="text-muted">Esquimalt</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 bg-white">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                                        <p class="card-text text-secondary">"The team was friendly and did a fantastic job. Will use again!"</p>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div>
+                                                <h5 class="mb-0">Santiago Ramirez</h5>
+                                                <small class="text-muted">Saanich</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 bg-white">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                                        <p class="card-text text-secondary">"Very happy with the results. The team was professional and efficient."</p>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div>
+                                                <h5 class="mb-0">Mina Hassan</h5>
+                                                <small class="text-muted">Victoria</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 bg-white">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                                        <p class="card-text text-secondary">"Excellent service and great results. Will use again!"</p>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div>
+                                                <h5 class="mb-0">Jin Park</h5>
+                                                <small class="text-muted">Sooke</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 bg-white">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                                        <p class="card-text text-secondary">"The best cleaning service I've used. Highly recommend!"</p>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div>
+                                                <h5 class="mb-0">Emily O'Connor</h5>
+                                                <small class="text-muted">Metchosin</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Custom Navigation Buttons -->
+                <div class="d-flex justify-content-center mt-4">
+                    <button class="btn btn-primary me-3" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                        <i class="fas fa-chevron-left"></i> Previous
+                    </button>
+                    <button class="btn btn-primary me-3" type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0">
+                        Page 1
+                    </button>
+                    <button class="btn btn-primary me-3" type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1">
+                        Page 2
+                    </button>
+                    <button class="btn btn-primary me-3" type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2">
+                        Page 3
+                    </button>
+                    <button class="btn btn-primary" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                        Next <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Gizmo's Steam Services</h5>
+                    <p>Gizmo’s Steamer helps us deliver deep, lasting results while being gentle on
+                        the planet. Want to see it in action? Check out our before-and-after gallery.</p>
+                    <a href="quote.html" class="btn btn-primary mb-4">Get a Free Quote</a>
+                    <p class="licensing">Fully Licensed, Insured, and Registered in British Columbia.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="what-we-steam.html">What We Steam</a></li>
+                        <li><a href="gizmos-steamer.html">Gizmo's Steamer</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="review.html">Leave a Review</a></li>
+                        <li><a href="quote.html">Request a Quote</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-phone"></i> (250) 507-3925</li>
+                        <li><i class="fas fa-envelope"></i> gizmossteamservices@gmail.com</li>
+                    </ul>
+                    <p class="developer mt-5">Website built by <a href="https://krakenthekode.com">Kraken The Kode</a></p>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">&copy; <span class="year"></span> Gizmo's Steam Services. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let date = new Date();
+        let year = date.getFullYear();
+        document.querySelector('.year').innerHTML = year;
+    </script>
+</body>
+</html>
