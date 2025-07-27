@@ -66,7 +66,7 @@
         <div class="offcanvas-body">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link active text-secondary" href="index.html">Home</a>
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="what-we-steam.html">What We Steam</a>
@@ -76,6 +76,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-secondary" href="testimonials.html">Testimonials</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="quote.html">Request a Quote</a>
@@ -91,12 +94,14 @@
     <section class="testimonials py-5">
         <div class="container">
             <h2 class="text-center mb-5">What Our Clients Say</h2>
-            <div id="testimonialCarousel" class="carousel slide" data-bs-interval="false">
+            
+            <!-- Desktop Carousel (Large Screens) -->
+            <div id="testimonialCarouselDesktop" class="carousel slide d-none d-lg-block" data-bs-interval="false">
                 <!-- Carousel Indicators -->
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#testimonialCarouselDesktop" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#testimonialCarouselDesktop" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#testimonialCarouselDesktop" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
                     <!-- Carousel Page 1 -->
@@ -507,28 +512,214 @@
                 </div>
                 <!-- Custom Navigation Buttons -->
                 <div class="d-flex justify-content-center mt-4">
-                    <button class="btn btn-primary me-3" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <button class="btn btn-primary me-3" type="button" data-bs-target="#testimonialCarouselDesktop" data-bs-slide="prev">
                         <i class="fas fa-chevron-left"></i> Previous
                     </button>
-                    <button class="btn btn-primary me-3" type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0">
+                    <button class="btn btn-primary me-3" type="button" data-bs-target="#testimonialCarouselDesktop" data-bs-slide-to="0">
                         Page 1
                     </button>
-                    <button class="btn btn-primary me-3" type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1">
+                    <button class="btn btn-primary me-3" type="button" data-bs-target="#testimonialCarouselDesktop" data-bs-slide-to="1">
                         Page 2
                     </button>
-                    <button class="btn btn-primary me-3" type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2">
+                    <button class="btn btn-primary me-3" type="button" data-bs-target="#testimonialCarouselDesktop" data-bs-slide-to="2">
                         Page 3
                     </button>
-                    <button class="btn btn-primary" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <button class="btn btn-primary" type="button" data-bs-target="#testimonialCarouselDesktop" data-bs-slide="next">
                         Next <i class="fas fa-chevron-right"></i>
                     </button>
                 </div>
             </div>
+
+            <!-- Mobile Carousel (Small Screens) -->
+            <div id="testimonialCarouselMobile" class="carousel slide d-block d-lg-none" data-bs-interval="false">
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#testimonialCarouselMobile" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#testimonialCarouselMobile" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#testimonialCarouselMobile" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#testimonialCarouselMobile" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#testimonialCarouselMobile" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#testimonialCarouselMobile" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#testimonialCarouselMobile" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                    <button type="button" data-bs-target="#testimonialCarouselMobile" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                    <button type="button" data-bs-target="#testimonialCarouselMobile" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                </div>
+                <div class="carousel-inner position-relative">
+                    <!-- Mobile Carousel Items (One testimonial per slide) -->
+                    <div class="carousel-item active">
+                        <div class="row mb-4">
+                            <div class="col-12 mb-4">
+                                <div class="card h-100 border-0 bg-white">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                                        <p class="card-text text-secondary">"The attention to detail and professionalism of Gizmos Steam Services is unmatched. They went above and beyond our expectations."</p>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div>
+                                                <h5 class="mb-0">Michael Thompson</h5>
+                                                <small class="text-muted">Sooke</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row mb-4">
+                            <div class="col-12 mb-4">
+                                <div class="card h-100 border-0 bg-white">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                                        <p class="card-text text-secondary">"Absolutely thrilled with the results! Our carpets look brand new and the whole house feels fresher. The team was friendly and efficient. Best steam cleaning in Victoria!"</p>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div>
+                                                <h5 class="mb-0">Aisha Patel</h5>
+                                                <small class="text-muted">Metchosin</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row mb-4">
+                            <div class="col-12 mb-4">
+                                <div class="card h-100 border-0 bg-white">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                                        <p class="card-text text-secondary">"Gizmos Steam Services did an amazing job on our office chairs and carpets. Prompt, professional, and local to Victoria. Highly recommend for any business!"</p>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div>
+                                                <h5 class="mb-0">Gurpreet Singh</h5>
+                                                <small class="text-muted">Langford</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row mb-4">
+                            <div class="col-12 mb-4">
+                                <div class="card h-100 border-0 bg-white">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                                        <p class="card-text text-secondary">"We had our rental property steam cleaned before new tenants moved in. The difference was incredible! Thank you for your excellent service in Victoria."</p>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div>
+                                                <h5 class="mb-0">Sophie Martin</h5>
+                                                <small class="text-muted">Victoria</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row mb-4">
+                            <div class="col-12 mb-4">
+                                <div class="card h-100 border-0 bg-white">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                                        <p class="card-text text-secondary">"Our area rugs and couches look fantastic after a visit from Gizmos Steam Services. Friendly staff and great results. Will use again!"</p>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div>
+                                                <h5 class="mb-0">Rachel Green</h5>
+                                                <small class="text-muted">Saanich</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row mb-4">
+                            <div class="col-12 mb-4">
+                                <div class="card h-100 border-0 bg-white">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                                        <p class="card-text text-secondary">"Prompt, reliable, and very thorough. Our mattresses and carpets have never been cleaner. Highly recommend Gizmos for anyone in Victoria!"</p>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div>
+                                                <h5 class="mb-0">Tom Baker</h5>
+                                                <small class="text-muted">Esquimalt</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row mb-4">
+                            <div class="col-12 mb-4">
+                                <div class="card h-100 border-0 bg-white">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                                        <p class="card-text text-secondary">"Gizmos Steam Services exceeded my expectations. The team was courteous and efficient. Will definitely recommend to friends and family!"</p>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div>
+                                                <h5 class="mb-0">Juan Martinez</h5>
+                                                <small class="text-muted">Victoria</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row mb-4">
+                            <div class="col-12 mb-4">
+                                <div class="card h-100 border-0 bg-white">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                                        <p class="card-text text-secondary">"Very happy with the service. The team was on time and did a fantastic job. Will use again!"</p>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div>
+                                                <h5 class="mb-0">Fatima Al-Farsi</h5>
+                                                <small class="text-muted">Sooke</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row mb-4">
+                            <div class="col-12 mb-4">
+                                <div class="card h-100 border-0 bg-white">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                                        <p class="card-text text-secondary">"The best steam cleaning service in the area. Professional, friendly, and thorough."</p>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div>
+                                                <h5 class="mb-0">Yuki Tanaka</h5>
+                                                <small class="text-muted">Metchosin</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Custom Navigation Buttons -->
+                <button class="btn btn-primary rounded-circle position-absolute" style="left: -25px; top: 50%; transform: translateY(-50%); width: 50px; height: 50px; z-index: 10;" type="button" data-bs-target="#testimonialCarouselMobile" data-bs-slide="prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="btn btn-primary rounded-circle position-absolute" style="right: -25px; top: 50%; transform: translateY(-50%); width: 50px; height: 50px; z-index: 10;" type="button" data-bs-target="#testimonialCarouselMobile" data-bs-slide="next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
         </div>
+
     </section>
-
-
-    <!-- Footer -->
     <footer class="py-4">
         <div class="container">
             <div class="row">
