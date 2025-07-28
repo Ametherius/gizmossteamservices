@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://gizmossteamservices.com/sitemap.xml
+
+# Disallow admin areas if any exist in the future
+Disallow: /admin/
+Disallow: /private/
+
+# Allow all other content
+Allow: /img/
+Allow: /css/
+Allow: /js/ 
