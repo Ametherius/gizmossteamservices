@@ -277,6 +277,23 @@ body {
     color: var(--primary-color);
 }
 
+.custom-popover {
+    --bs-popover-bg: var(--primary-color);
+    --bs-popover-color: var(--light-color);
+    --bs-popover-border-color: var(--secondary-color);
+    --bs-popover-header-bg: var(--secondary-color); 
+    --bs-popover-header-color: var(--primary-color);
+    --bs-popover-border-radius: var(--border-radius);
+    --bs-popover-body-bg: var(--primary-color);
+    --bs-popover-body-color: var(--light-color);
+    --bs-popover-arrow-color: var(--secondary-color);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border: 2px solid var(--secondary-color);
+    max-width: 400px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
 .service-card h3 {
     margin: var(--spacing-md) 0;
     font-size: 1.5rem;

@@ -240,7 +240,9 @@
                         <i class="fas fa-car fa-3x mb-3"></i>
                         <h3>Automotive Cleaning</h3>
                         <p>Deep clean your vehicle's interior with our advanced steam cleaning technology</p>
-                        <a href="services.html" class="btn btn-outline-primary mt-3">Learn More</a>
+                        <button type="button" class="btn btn-outline-primary mt-4" data-bs-toggle="popover" data-bs-placement="top" 
+                        data-bs-title="Automotive Cleaning - Revive your ride with the power of steam." data-bs-custom-class="custom-popover" 
+                        data-bs-content="Gizmo’s Steam Services offers professional, eco-friendly automotive detailing that reaches deep into every crevice of your car, truck, or SUV. Our commercial-grade steam cleaner lifts dirt, salt, grease, and bacteria from carpets, seats, door panels, consoles, and vents — without harsh chemicals. We sanitize high-touch areas, eliminate odors, and leave your vehicle fresh, dry, and ready to go in minutes. Perfect for personal vehicles, rideshares, fleets, or even RV interiors.">Learn More</button>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -248,7 +250,8 @@
                         <i class="fas fa-rug fa-3x mb-3"></i>
                         <h3>Carpet Cleaning</h3>
                         <p>Professional carpet cleaning that removes deep-seated dirt and stains</p>
-                        <a href="services.html" class="btn btn-outline-primary mt-3">Learn More</a>
+                        <button type="button" class="btn btn-outline-primary mt-4" data-bs-toggle="popover" data-bs-placement="top" data-bs-title="Carpet Cleaning - Gentle on carpets, tough on grime." data-bs-custom-class="custom-popover" 
+                        data-bs-content="We use superheated low-moisture steam to break down deep-seated dirt, stains, allergens, and bacteria embedded in your carpets and rugs — without soaking them. Unlike traditional carpet shampooing, our method is fast-drying, chemical-free, and safe for kids and pets. Ideal for high-traffic areas, entryways, rental units, and allergy-prone homes. You’ll be amazed at what steam can do.">Learn More</button>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -256,7 +259,8 @@
                         <i class="fas fa-home fa-3x mb-3"></i>
                         <h3>House Cleaning</h3>
                         <p>Comprehensive house cleaning services for a spotless home</p>
-                        <a href="services.html" class="btn btn-outline-primary mt-3">Learn More</a>
+                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="popover" data-bs-placement="top" data-bs-title="House Cleaning - Whole-home freshness, powered by steam." data-bs-custom-class="custom-popover" 
+                        data-bs-content="Our steam cleaning service brings a deep, hygienic clean to the surfaces that matter most — kitchens, bathrooms, baseboards, tile grout, appliances, door handles, and more. We sanitize without leaving chemical residue behind, making it perfect for families, seniors, and anyone with sensitivities. Whether it’s a seasonal refresh or a move-in/move-out clean, GSS delivers the sparkling results you can feel good about.">Learn More</button>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -264,7 +268,8 @@
                         <i class="fas fa-burger fa-3x mb-3"></i>
                         <h3>Barbecue Cleaning</h3>
                         <p>Remove grease and grime from your BBQ</p>
-                        <a href="services.html" class="btn btn-outline-primary mt-3">Learn More</a>
+                        <button type="button" class="btn btn-outline-primary mt-4" data-bs-toggle="popover" data-bs-placement="top" data-bs-title="BBQ Cleaning - Grill cleanup that’s actually satisfying." data-bs-custom-class="custom-popover" 
+                        data-bs-content="Forget wire brushes and elbow grease. Our high-temperature steam obliterates burnt-on grease, food residue, and carbon buildup on grates, burners, drip trays, and lids — leaving your BBQ safe, clean, and ready for your next cookout. No chemicals, no toxic fumes, and no mess left behind. Ideal for gas, charcoal, and pellet grills of any size.">Learn More</button>
                     </div>
                 </div>
             </div>
@@ -329,6 +334,14 @@
         let date = new Date();
         let year = date.getFullYear();
         document.querySelector('.year').innerHTML = year;
+        
+        // Initialize Bootstrap popovers
+        document.addEventListener('DOMContentLoaded', function() {
+            const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+            const popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+                return new bootstrap.Popover(popoverTriggerEl);
+            });
+        });
     </script>
 </body>
 </html>
