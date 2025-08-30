@@ -879,7 +879,6 @@ footer p.developer a {
 
 @media (max-width: 576px) {
   .testimonials {
-    background: linear-gradient(to right, rgba(201, 140, 51, 0.7), rgba(201, 140, 51, 0.8)) !important;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
     margin-top: 76px !important;
     padding-top: 2rem !important;
