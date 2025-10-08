@@ -1,0 +1,13 @@
+{
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "rewrites": [
+        { "source": "/gallery", "destination": "/gallery.html" },
+        { "source": "/gizmos-steamer", "destination": "/gizmos-steamer.html" },
+        { "source": "/quote", "destination": "/quote.html" },
+        { "source": "/review", "destination": "/review.html" },
+        { "source": "/testimonials", "destination": "/testimonials.html" },
+        { "source": "/what-we-steam", "destination": "/what-we-steam.html" },
+        { "source": "/thankyou", "destination": "/thankyou.html" }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "gizmo's-steam-services",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "formidable": "^3.5.4",
+    "nodemailer": "^7.0.9"
+  }
+}
