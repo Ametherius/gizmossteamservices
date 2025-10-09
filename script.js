@@ -70,3 +70,73 @@ if (form) {
         });
     });
 }
+
+// Review Form Submission
+
+const reviewForm = document.getElementById('reviewForm');
+
+if (reviewForm) {
+    reviewForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        // Add Bootstrap validation classes
+        reviewForm.classList.add('was-validated');
+        
+        if (!reviewForm.checkValidity()) {
+            return;
+        }
+
+        const reviewData = {
+            name: reviewForm.name.value,
+            email: reviewForm.email.value,
+            rating: reviewForm.rating.value,
+            review: reviewForm.review.value,
+        }
+
+        console.log('Review data:', reviewData);
+
+        fetch('/api/submitReview', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(reviewData),
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Response received:', data);
+            const reviewToast = document.getElementById('reviewToast');
+            const reviewToastMessage = document.getElementById('reviewToastMessage');
+
+            if (reviewToast && reviewToastMessage) {
+                reviewToastMessage.innerHTML = data.message || 'Response received';
+                const toast = new bootstrap.Toast(reviewToast);
+                toast.show();
+
+                if (data.success) {
+                    reviewForm.reset();
+                    reviewForm.classList.remove('was-validated');
+                }
+            } else {
+                console.error('Review toast elements not found');
+                alert('Failed to submit review. Please try again.');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            const reviewToast = document.getElementById('reviewToast');
+            const reviewToastMessage = document.getElementById('reviewToastMessage');
+
+            if (reviewToast && reviewToastMessage) {
+                reviewToastMessage.innerHTML = 'Failed to submit review. Please try again.';
+                const toast = new bootstrap.Toast(reviewToast);
+                toast.show();
+            } else {
+                console.error('Review toast elements not found');
+                alert('Failed to submit review. Please try again.');
+            }
+        });
+    });
+}
+

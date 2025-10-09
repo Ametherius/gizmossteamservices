@@ -139,9 +139,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-6">
                     <div class="card-body bg-transparent p-0 shadow">
-                        <form id="reviewForm" class="review-form" action="https://formsubmit.co/gizmossteamservices@gmail.com" method="POST" novalidate>
-                            <input type="hidden" name="_next" value="https://gizmossteamservices.com/review-success.html">
-                            <input type="hidden" name="_honeypot" value="honeypot">
+                        <form id="reviewForm" class="review-form needs-validation" method="POST" novalidate>
                             <h2 class="text-center mb-4">Leave a Review</h2>
                             <div class="mb-3">
                                 <label for="name" class="form-label">Name</label>
@@ -171,6 +169,18 @@
             </div>
         </div>
     </section>
+
+    <div class="toast-container">
+        <div class="toast" id="reviewToast">
+            <div class="toast-header">
+                <strong class="me-auto">Gizmo's Steam Services</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                <p id="reviewToastMessage"></p>
+            </div>
+        </div>
+    </div>
 
     <footer class="py-4">
         <div class="container">
@@ -210,6 +220,7 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
     <script>
         let date = new Date();
         let year = date.getFullYear();
