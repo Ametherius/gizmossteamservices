@@ -25,6 +25,8 @@ if (form) {
             preferredTime: form.preferredTime.value,
             additionalInfo: form.additionalInfo.value,
         }
+
+        console.log('Form data:', formData);
         
         fetch('/api/submitForm', {
             method: 'POST',
