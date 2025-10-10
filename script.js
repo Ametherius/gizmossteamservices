@@ -43,6 +43,8 @@ if (form) {
             
             if (toastElement && toastMessage) {
                 toastMessage.innerHTML = data.message || 'Response received';
+                toastElement.classList.remove('bg-danger', 'text-white');
+                toastElement.classList.add('bg-success', 'text-white');
                 const toast = new bootstrap.Toast(toastElement);
                 toast.show();
                 
@@ -61,6 +63,8 @@ if (form) {
             
             if (toastElement && toastMessage) {
                 toastMessage.innerHTML = 'Failed to submit form. Please try again.';
+                toastElement.classList.remove('bg-success', 'text-white');
+                toastElement.classList.add('bg-danger', 'text-white');
                 const toast = new bootstrap.Toast(toastElement);
                 toast.show();
             } else {
@@ -111,6 +115,8 @@ if (reviewForm) {
 
             if (reviewToast && reviewToastMessage) {
                 reviewToastMessage.innerHTML = data.message || 'Response received';
+                reviewToast.classList.remove('bg-danger', 'text-white');
+                reviewToast.classList.add('bg-success', 'text-white');
                 const toast = new bootstrap.Toast(reviewToast);
                 toast.show();
 
@@ -130,6 +136,8 @@ if (reviewForm) {
 
             if (reviewToast && reviewToastMessage) {
                 reviewToastMessage.innerHTML = 'Failed to submit review. Please try again.';
+                reviewToast.classList.remove('bg-success', 'text-white');
+                reviewToast.classList.add('bg-danger', 'text-white');
                 const toast = new bootstrap.Toast(reviewToast);
                 toast.show();
             } else {
