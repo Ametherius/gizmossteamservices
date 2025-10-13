@@ -11,7 +11,7 @@ export default async function handler(req, res) {
         return res.end('Missing request body');
     }
 
-    const { firstName, lastName, email, phone, service, propertyType, squareFootage, preferredDate, preferredTime, additionalInfo } = req.body;
+    const { firstName, lastName, email, phone, service, propertyType, additionalInfo } = req.body;
 
 
     const transporter = nodemailer.createTransport({
@@ -77,28 +77,6 @@ export default async function handler(req, res) {
                                         <h3 style="font-family: 'Arial', sans-serif; color: #000000; font-size: 16px; font-weight: bold; text-transform: uppercase;">Property Type:</h3>
                                         <p style="font-family: 'Arial', sans-serif; color: #000000; font-size: 16px; font-weight: bold; margin: 0;">${propertyType}</p>
                                         </td>
-                                    </td>
-                                 </tr>
-                                 <tr>
-                                    <td style="padding: 20px;">
-                                        <h3 style="font-family: 'Arial', sans-serif; color: #000000; font-size: 16px; font-weight: bold; text-transform: uppercase;">Approximat Square Feet:</h3>
-                                        <p style="font-family: 'Arial', sans-serif; color: #000000; font-size: 16px; font-weight: bold; margin: 0;">${squareFootage}</p>
-                                    </td>
-                                   
-                                 </tr>
-                                 <tr>
-                                    <td style="padding: 20px;">
-                                        <h3 style="font-family: 'Arial', sans-serif; color: #000000; font-size: 16px; font-weight: bold; text-transform: uppercase;">Preffered Date:</h3>
-                                        <p style="font-family: 'Arial', sans-serif; color: #000000; font-size: 16px; font-weight: bold; margin: 0;">${preferredDate}</p>
-                                        <td>
-                                            <h3 style="font-family: 'Arial', sans-serif; color: #000000; font-size: 16px; font-weight: bold; text-transform: uppercase;">Preffered Time:</h3>
-                                        <p style="font-family: 'Arial', sans-serif; color: #000000; font-size: 16px; font-weight: bold; margin: 0;">${preferredTime}</p>
-                                        </td>
-                                    </td>
-                                 </tr>
-                                 <tr>
-                                        <td style="padding: 20px;">
-                                        
                                     </td>
                                  </tr>
                                  <tr>

@@ -20,9 +20,6 @@ if (form) {
             phone: form.phone.value,
             service: form.service.value,
             propertyType: form.propertyType.value,
-            squareFootage: form.squareFootage.value,
-            preferredDate: form.preferredDate.value,
-            preferredTime: form.preferredTime.value,
             additionalInfo: form.additionalInfo.value,
         }
 
