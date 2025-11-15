@@ -11,15 +11,7 @@ export default async function handler(req, res) {
     return res.end("Missing request body");
   }
 
-  const {
-    firstName,
-    lastName,
-    email,
-    phone,
-    service,
-    propertyType,
-    additionalInfo,
-  } = req.body;
+  const { firstName, lastName, email, phone } = req.body;
 
   const transporter = nodemailer.createTransport({
     service: "gmail",
@@ -33,9 +25,6 @@ export default async function handler(req, res) {
   <p style="font-family: 'Arial', sans-serif; padding: 20px; border: 1px solid #000000; margin: 0; text-align: start;"><strong>Name: </strong>${firstName} ${lastName}</p>
   <p style="font-family: 'Arial', sans-serif; padding: 20px; border: 1px solid #000000; margin: 0; text-align: start;"><strong>Email: </strong>${email}</p>
   <p style="font-family: 'Arial', sans-serif; padding: 20px; border: 1px solid #000000; margin: 0; text-align: start;"><strong>Phone: </strong>${phone}</p>
-  <p style="font-family: 'Arial', sans-serif; padding: 20px; border: 1px solid #000000; margin: 0; text-align: start;"><strong>Service: </strong>${service}</p>
-  <p style="font-family: 'Arial', sans-serif; padding: 20px; border: 1px solid #000000; margin: 0; text-align: start;"><strong>Property Type: </strong>${propertyType}</p>
-  <p style="font-family: 'Arial', sans-serif; padding: 20px; border: 1px solid #000000; margin: 0; text-align: start;"><strong>Additional Information: </strong>${additionalInfo}</p>
   `;
 
   const mailOptions = {
