@@ -1,5 +1,9 @@
-const form = document.getElementById("quoteForm");
+import { testimonials } from "./testimonials.js";
+import { gallertyItems } from "./galleryItems.js";
 
+const form = document.getElementById("quoteForm");
+let testimonialsContainer;
+let galleryItemsContainer;
 if (form) {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -143,4 +147,39 @@ if (reviewForm) {
         }
       });
   });
+}
+
+const displayTestimonials = function (testimonials) {
+  testimonialsContainer = document.querySelector(".testimonials-container");
+  if (!testimonialsContainer) {
+    console.error("Testimonials container not found");
+    return;
+  }
+  testimonialsContainer.innerHTML = "";
+  testimonials.forEach(function (testimonial) {
+    const html = `
+  <div class="card h-100 border-0 bg-white mb-3">
+    <div class="card-body p-4">
+        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+        <p class="card-text text-secondary">"${testimonial.testimonial}"</p>
+        <div class="d-flex align-items-center mt-3">
+            <div>
+                <h5 class="mb-0">${testimonial.name}</h5>
+                <small class="text-muted">${testimonial.location}</small>
+            </div>
+        </div>
+    </div>
+  </div>
+    `;
+    testimonialsContainer.insertAdjacentHTML("afterbegin", html);
+  });
+};
+
+// Wait for DOM to be ready and then display testimonials
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", () => {
+    displayTestimonials(testimonials);
+  });
+} else {
+  displayTestimonials(testimonials);
 }
