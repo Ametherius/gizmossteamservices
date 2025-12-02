@@ -1,5 +1,40 @@
-import { testimonials } from "./testimonials.js";
-import { gallertyItems } from "./galleryItems.js";
+import { testimonials } from "./data/testimonials.js";
+import { faq } from "./data/faq.js";
+
+const navLinks = [
+  {
+    name: "Home",
+    link: "./",
+  },
+  {
+    name: "What We Steam",
+    link: "./what-we-steam",
+  },
+  {
+    name: "Gizmo's Steamer",
+    link: "./gizmos-steamer",
+  },
+  {
+    name: "Gallery",
+    link: "./gallery",
+  },
+  {
+    name: "Testimonials",
+    link: "./testimonials",
+  },
+  {
+    name: "FAQ's",
+    link: "./faq",
+  },
+  {
+    name: "Request a Quote",
+    link: "./quote",
+  },
+  {
+    name: "Leave a Review",
+    link: "./reviews",
+  },
+];
 
 const form = document.getElementById("quoteForm");
 let testimonialsContainer;
@@ -183,3 +218,90 @@ if (document.readyState === "loading") {
 } else {
   displayTestimonials(testimonials);
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const faqAccordion = document.querySelector(".faq-accordion");
+
+  const displayFAQ = function (faq) {
+    faqAccordion.textContent = "";
+    faq.forEach((faqs, i) => {
+      const show = i === 0 ? "show" : "";
+      const expanded = i === 0 ? "true" : "false";
+      const html = `
+                <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapse${i}"
+                aria-expanded="true"
+                aria-controls="flush-collapse${i}"
+              >
+                <strong>${faqs.question}</strong>
+              </button>
+            </h2>
+            <div
+              class="accordion-collapse collapse ${show}"
+              id="flush-collapse${i}"
+              data-bs-parent="#faq-accordion"
+            >
+              <div class="accordion-body">
+                ${faqs.answer}
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+      faqAccordion.insertAdjacentHTML("beforeend", html);
+    });
+  };
+  displayFAQ(faq);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinksList = document.querySelector(".navbar-nav");
+
+  const displayNavLinks = function (links) {
+    navLinksList.textContent = "";
+    links.forEach((link) => {
+      const html = `
+          <li class="nav-item">
+            <a class="nav-link" href="${link.link}">${link.name}</a>
+          </li>
+      `;
+      navLinksList.insertAdjacentHTML("beforeend", html);
+    });
+  };
+  displayNavLinks(navLinks);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const mobileNav = document.querySelector(".mobile-nav");
+
+  const displayMobileNav = function (links) {
+    mobileNav.textContent = "";
+    links.forEach((link) => {
+      const html = `
+          <li class="nav-item">
+            <a class="nav-link" href="${link.link}">${link.name}</a>
+          </li>
+      `;
+      mobileNav.insertAdjacentHTML("beforeend", html);
+    });
+  };
+  displayMobileNav(navLinks);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const quickLinks = document.querySelector(".quick-links");
+
+  const displayQuickLinks = function (links) {
+    quickLinks.textContent = "";
+    links.forEach((link) => {
+      const html = `<li><a href="${link.link}">${link.name}</a></li>`;
+      quickLinks.insertAdjacentHTML("beforeend", html);
+    });
+  };
+  displayQuickLinks(navLinks);
+});

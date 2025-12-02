@@ -692,6 +692,24 @@ body {
 .steamer-card li {
   padding: var(--spacing-md) 0;
 }
+/* FAQ Container */
+.faq-container {
+  margin-top: 100px;
+  height: 100vh;
+  background-color: #ffffff1a;
+  padding: 20px 15px;
+  box-sizing: border-box;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid white;
+  height: fit-content;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+.faq-accordion {
+  margin-bottom: 20px;
+}
 
 /* Gallery Preview */
 .gallery-preview-card {
