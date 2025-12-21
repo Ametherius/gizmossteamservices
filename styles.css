@@ -711,6 +711,95 @@ body {
   margin-bottom: 20px;
 }
 
+/* Pricing Section */
+.pricing-section {
+  margin-top: 100px;
+  padding: 20px;
+}
+
+.pricing-title {
+  color: var(--primary-color);
+  font-weight: var(--font-weight-xl);
+  font-size: var(--font-size-xxl);
+}
+
+.pricing-caption {
+  font-weight: bold;
+}
+
+.pricing-card {
+  background-color: #ffffff76;
+  margin: 10px;
+  border-radius: 15px;
+  padding: 10px;
+  width: 100%;
+  border: 2px solid white;
+  height: 100%;
+}
+
+.pricing-card .card-header {
+  background-color: transparent;
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+  border: none;
+}
+
+.pricing-card .card-body {
+  background-color: #ffffff00;
+  border-radius: 0px 0px 20px 20px;
+  width: 100%;
+}
+
+.pricing-content {
+  background-color: #ffffff1a;
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  border-radius: 2px solid white;
+}
+
+.sub-card .card-header {
+  background-color: transparent;
+  border: none;
+}
+
+.table {
+  background-color: transparent !important;
+  border: 3px solid white;
+  color: white;
+}
+
+.table thead {
+  background-color: transparent !important;
+  border: 3px solid white;
+  color: white;
+}
+
+.table tbody {
+  background-color: transparent !important;
+  border: 3px solid white;
+  color: white;
+}
+
+.table th {
+  background-color: transparent !important;
+  border: 3px solid white;
+  color: var(--primary-color);
+  text-shadow: 2px 1px 1px #ffffff;
+}
+
+.table td {
+  background-color: transparent !important;
+  border: 3px solid white;
+  color: var(--primary-color);
+  text-shadow: 2px 1px 1px #ffffff;
+}
+
+.table tr {
+  background-color: #ffffff33 !important;
+  border: 3px solid white;
+}
+
 /* Gallery Preview */
 .gallery-preview-card {
   position: relative;

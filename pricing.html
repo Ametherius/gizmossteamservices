@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content="mess free, steam cleaning, victoria bc, chemical free"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prices and Servies - Gizmo's Steam Services</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="background-image"></div>
+    <div class="background-gradient"></div>
+    <nav
+      class="navbar navbar-expand-md navbar-dark d-none d-lg-block fixed-top"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="img/backgroundimage.png"
+            alt="Gizmos Steam Services"
+            class="logo"
+            style="width: 75px"
+          />Gizmo's Steam Services
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./">Home</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid d-lg-none d-sm-block mobile-navbar fixed-top">
+      <button
+        class="navbar-toggler d-lg-none d-sm-block"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">
+          Gizmo's Steam Services
+        </h5>
+        <button
+          type="button"
+          class="bg-transparent border-0"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        >
+          <i class="fa-solid text-white fa-xmark"></i>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav mobile-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./">Home</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container-fluid text-center pricing-section">
+      <h2 class="pricing-title fw-bold">Packages and Services</h2>
+    </div>
+    <div class="container text-center pricing-content">
+      <h6 class="pricing-caption text-center lead">
+        These are the packages and services we offer at Gizmo's Steam Services.
+      </h6>
+      <p class="fw-bold fst-italic">
+        *Minimum $199 call out required, taxes not included
+      </p>
+      <h3 class="mb-5 text-decoration-underline">Launch Bundles</h3>
+      <div class="bundle-cards row my-5">
+        <div class="card pricing-card">
+          <div class="card-header">
+            <h4 class="card-title"><i class="fa-light fa-paw"></i></h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <h3 class="mb-5 text-decoration-underline">Room Based Pricing</h3>
+      <div class="room-cards row my-5">
+        <div class="card room-card">
+          <div class="card-header">
+            <div class="card-title"></div>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <h3 class="mb-5 text-decoration-underline">Specialty Jobs and Add-ons</h3>
+      <div class="row mb-4">
+        <div class="col-md-6 specialty-table">
+          <h3 class="mb-4">Specialty Jobs</h3>
+          <table class="table table-bordered border-white border-2">
+            <thead class="bg-transparent">
+              <tr>
+                <th scope="col">Service</th>
+                <th scope="col">Price</th>
+              </tr>
+            </thead>
+            <tbody class="specialty-rows"></tbody>
+          </table>
+        </div>
+        <div class="col-md-6">
+          <h3 class="mb-4">Add Ons</h3>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">Service</th>
+                <th scope="col">Price</th>
+              </tr>
+            </thead>
+            <tbody class="add-on-rows"></tbody>
+          </table>
+        </div>
+      </div>
+      <h3 class="mb-5">Subscription Pricing</h3>
+      <div class="row subscriptions">
+        <div class="col-md-6">
+          <div class="card sub-card">
+            <div class="card-header">
+              <h4 class="card-title"></h4>
+            </div>
+            <div class="card-body">
+              <p class="fst-italic fw-bold"></p>
+              <ul class="list-unstyled text-center"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Gizmo's Steam Services</h5>
+            <p>
+              Gizmo’s Steamer helps us deliver deep, lasting results while being
+              gentle on the planet. Want to see it in action? Check out our
+              before-and-after gallery.
+            </p>
+            <a href="quote.html" class="btn btn-secondary mb-4"
+              >Get a Free Quote</a
+            >
+            <p class="licensing">
+              Fully Licensed, Insured, and Registered in British Columbia.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled quick-links">
+              <li><a href="./">Home</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Contact Info</h5>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-phone"></i> (250) 507-3925</li>
+              <li>
+                <i class="fas fa-envelope"></i> gizmossteamservices@gmail.com
+              </li>
+            </ul>
+            <p class="developer mt-5">
+              Website built by
+              <a href="https://krakenthekode.com">Kraken The Kode</a>
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="text-center">
+          <p class="mb-0">
+            &copy; <span class="year"></span> Gizmo's Steam Services. All rights
+            reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>

@@ -1,5 +1,10 @@
 import { testimonials } from "./data/testimonials.js";
 import { faq } from "./data/faq.js";
+import { launchBundles } from "./data/bundles.js";
+import { roomPrices } from "./data/roomprices.js";
+import { specialty } from "./data/specialty.js";
+import { addons } from "./data/addons.js";
+import { subs } from "./data/subs.js";
 
 const navLinks = [
   {
@@ -13,6 +18,10 @@ const navLinks = [
   {
     name: "Gizmo's Steamer",
     link: "./gizmos-steamer",
+  },
+  {
+    name: "Services",
+    link: "./pricing",
   },
   {
     name: "Gallery",
@@ -305,3 +314,71 @@ document.addEventListener("DOMContentLoaded", function () {
   };
   displayQuickLinks(navLinks);
 });
+
+const locale = navigator.language;
+const bundleContainer = document.querySelector(".bundle-cards");
+const roomContainer = document.querySelector(".room-cards");
+const specialtyrows = document.querySelector(".specialty-rows");
+const addOnRows = document.querySelector(".add-on-rows");
+
+const displayPriceCards = function (container, array) {
+  container.textContent = "";
+  array.forEach((arr) => {
+    const list = arr.list.map((item) => `<li>${item}</li>`).join("");
+    const html = `
+    <div class="col-md-4">
+            <div class="${arr.style}">
+              <div class="card-header bg-transparent border-0">
+                <i class="${arr.icon}"></i>
+                <h4 class="card-title">${arr.title} - $${arr.price}</h4>
+              </div>
+            <div class="card-body">
+                <ul class="list-unstyled">
+                    ${list}
+                </ul>
+            </div>
+        </div>
+      </div>
+    `;
+    container.insertAdjacentHTML("beforeend", html);
+  });
+};
+
+const subContainer = document.querySelector(".subscriptions");
+const displaySubs = function (array) {
+  subContainer.textContent = "";
+  array.forEach((arr) => {
+    const list = arr.list.map((item) => `<li>${item}</li>`).join("");
+    const html = `
+        <div class="col-md-4">
+          <div class="card sub-card">
+            <div class="card-header">
+              <i class="${arr.icon}"></i><h4 class="card-title">${arr.service} - ${arr.price}</h4>
+            </div>
+            <div class="card-body">
+              <p class="fst-italic fw-bold">${arr.tagline}</p>
+              <ul class="list-unstyled text-center">${list}</ul>
+            </div>
+          </div>
+        </div>
+    `;
+    subContainer.insertAdjacentHTML("beforeend", html);
+  });
+};
+displaySubs(subs);
+displayPriceCards(roomContainer, roomPrices);
+displayPriceCards(bundleContainer, launchBundles);
+
+const displayPriceTables = function (container, array) {
+  array.forEach((arr) => {
+    const html = `
+            <tr>
+              <td>${arr.service}</td>
+              <td>${arr.price}</td>
+            </tr>
+    `;
+    container.insertAdjacentHTML("beforeend", html);
+  });
+};
+displayPriceTables(specialtyrows, specialty);
+displayPriceTables(addOnRows, addons);
