@@ -41,7 +41,7 @@ const navLinks = [
   },
   {
     name: "Leave a Review",
-    link: "./reviews",
+    link: "./review",
   },
 ];
 
