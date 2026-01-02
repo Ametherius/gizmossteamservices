@@ -5,7 +5,7 @@ export const launchBundles = [
     style: "card bundle-card",
     price: 199,
     list: [
-      "Upholstery Steam (couch or hair set)",
+      "Upholstery Steam (couch or chair set)",
       "Pet Odor Treatment",
       "One Room Refresh",
     ],
@@ -28,7 +28,7 @@ export const launchBundles = [
     title: "Move-Out/Move-In Special",
     icon: "fa-solid fa-box mb-4 fs-1",
     style: "card bundle-card",
-    price: 399,
+    price: '399 (based on 2 bedroom condo)',
     list: ["Bathrooms", "Bedrooms", "Kitchen", "Living/Dining Room"],
   },
 ];

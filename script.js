@@ -20,29 +20,23 @@ const navLinks = [
     link: "./gizmos-steamer",
   },
   {
-    name: "Services",
-    link: "./pricing",
-  },
-  {
-    name: "Gallery",
-    link: "./gallery",
-  },
-  {
     name: "Testimonials",
     link: "./testimonials",
+  },
+  {
+    name: "Services",
+    link: "./pricing",
   },
   {
     name: "FAQ's",
     link: "./faq",
   },
   {
-    name: "Request a Quote",
-    link: "./quote",
+    name: "Gallery",
+    link: "./gallery",
   },
-  {
-    name: "Leave a Review",
-    link: "./review",
-  },
+
+
 ];
 
 const form = document.getElementById("quoteForm");

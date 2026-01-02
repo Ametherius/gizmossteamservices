@@ -765,39 +765,40 @@ body {
 
 .table {
   background-color: transparent !important;
-  border: 3px solid white;
+  border: 3px solid #000000;
   color: white;
 }
 
 .table thead {
   background-color: transparent !important;
-  border: 3px solid white;
+  border: 3px solid #000000;
   color: white;
 }
 
 .table tbody {
   background-color: transparent !important;
-  border: 3px solid white;
+  border: 3px solid var(--primary-color);
   color: white;
 }
 
 .table th {
   background-color: transparent !important;
-  border: 3px solid white;
+  border: 3px solid var(--primary-color);
   color: var(--primary-color);
-  text-shadow: 2px 1px 1px #ffffff;
+  font-weight: bold;
 }
 
 .table td {
   background-color: transparent !important;
-  border: 3px solid white;
+  border: 3px solid var(--primary-color);
   color: var(--primary-color);
-  text-shadow: 2px 1px 1px #ffffff;
 }
 
 .table tr {
   background-color: #ffffff33 !important;
-  border: 3px solid white;
+  border: 3px solid var(--primary-color);
+  font-weight: bold;
+  color: var(--secondary-color);
 }
 
 /* Gallery Preview */

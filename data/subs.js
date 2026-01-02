@@ -9,7 +9,7 @@ export const subs = [
   {
     service: "Fresh Home Steam",
     icon: "fa-solid fa-house mb-4 fs-1",
-    price: "$249/quarter",
+    price: "$249/visit",
     tagline: "Perfect for families and pet owners",
     list: [
       "Choose 2 items per month(bathroom, kitchen, upholstery piece, etc)",
