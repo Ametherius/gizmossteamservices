@@ -15,10 +15,10 @@ const navLinks = [
     name: "What We Steam",
     link: "./what-we-steam",
   },
-  {
-    name: "Gizmo's Steamer",
-    link: "./gizmos-steamer",
-  },
+  // {
+  //   name: "Gizmo's Steamer",
+  //   link: "./gizmos-steamer",
+  // },
   {
     name: "Testimonials",
     link: "./testimonials",
@@ -35,8 +35,6 @@ const navLinks = [
     name: "Gallery",
     link: "./gallery",
   },
-
-
 ];
 
 const form = document.getElementById("quoteForm");
