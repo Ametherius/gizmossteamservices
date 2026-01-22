@@ -717,6 +717,17 @@ body {
   padding: 20px;
 }
 
+.banner {
+  background-color: #ffffff58;
+  backdrop-filter: blur(10px);
+  transform: skewX(-20deg);
+  padding: 10px;
+  color: var(--primary-color);
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  margin-bottom: 20px;
+}
+
 .pricing-title {
   color: var(--primary-color);
   font-weight: var(--font-weight-xl);
