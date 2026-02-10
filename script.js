@@ -207,7 +207,7 @@ const displayTestimonials = function (testimonials) {
     </div>
   </div>
     `;
-    testimonialsContainer.insertAdjacentHTML("afterbegin", html);
+    testimonialsContainer.insertAdjacentHTML("beforeend", html);
   });
 };
 

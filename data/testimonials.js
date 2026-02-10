@@ -1,15 +1,21 @@
 export const testimonials = [
   {
-    name: "Michael Thompson",
-    location: "Sooke",
+    name: "Katy Weigand",
+    location: "Langford",
     testimonial:
-      "The attention to detail and professionalism of Gizmos Steam Services is unmatched. They went above and beyond our expectations.",
+      "I first hired Gizmo’s Steam Services to clean our BBQ and was so impressed with the results that I had them back to clean our kitchen and spare bedroom. Everything looked amazing. Chris was very professional, and the customer service was exceptional from start to finish. I’m beyond satisfied with their work and would highly recommend them.",
   },
   {
-    name: "Tom Baker",
-    location: "Esquimalt",
-    testimonial:
-      "Prompt, reliable, and very thorough. Our mattresses and carpets have never been cleaner. Highly recommend Gizmos for anyone in Victoria!",
+    name: "Kassia Skolski",
+    location: "Langford",
+    testimonial: `Posting on behalf of my mother :) <br>
+Gizmo’s Steam Services came over to clean my mother’s oven! It had been 10+ years since it had a good deep clean!<br>
+
+Chris was kind, knowledgeable and easy to connect with. We were impressed by the little mess and splash it made to the rest of the kitchen. No smell, no chemicals and the oven looks brand new!<br>
+
+He was in and out in less time than expected - but I’m sure that depends on how dirty the job is! Gizmo’s has so many other services, we are interested in having him back for something else!
+
+Thank you!`,
   },
   {
     name: "Rachel Green",
