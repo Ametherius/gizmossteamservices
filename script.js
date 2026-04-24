@@ -5,6 +5,7 @@ import { roomPrices } from "./data/roomprices.js";
 import { specialty } from "./data/specialty.js";
 import { addons } from "./data/addons.js";
 import { subs } from "./data/subs.js";
+import { bbqPackages } from "./data/bbqPackges.js";
 
 const navLinks = [
   {
@@ -312,6 +313,7 @@ const bundleContainer = document.querySelector(".bundle-cards");
 const roomContainer = document.querySelector(".room-cards");
 const specialtyrows = document.querySelector(".specialty-rows");
 const addOnRows = document.querySelector(".add-on-rows");
+const bbqContainer = document.querySelector(".bbq-cards");
 
 const displayPriceCards = function (container, array) {
   container.textContent = "";
@@ -325,6 +327,7 @@ const displayPriceCards = function (container, array) {
                 <h4 class="card-title">${arr.title} - $${arr.price}</h4>
               </div>
             <div class="card-body">
+                <h6 class="mb-3">${arr.tagline}</h6>
                 <ul class="list-unstyled">
                     ${list}
                 </ul>
@@ -360,6 +363,7 @@ const displaySubs = function (array) {
 displaySubs(subs);
 displayPriceCards(roomContainer, roomPrices);
 displayPriceCards(bundleContainer, launchBundles);
+displayPriceCards(bbqContainer, bbqPackages);
 
 const displayPriceTables = function (container, array) {
   array.forEach((arr) => {

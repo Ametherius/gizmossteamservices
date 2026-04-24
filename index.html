@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -233,8 +233,11 @@
       <div class="container">
         <div class="banner">
           <h6 class="text-center">
-            <span class="fw-bold text-center fs-4">Join Gizmo's Family Today!</span><br><br>
-            Get $30 off your first service, then earn $45 back for every referral!
+            <span class="fw-bold text-center fs-4"
+              >Join Gizmo's Family Today!</span
+            ><br /><br />
+            Get $30 off your first service, then earn $45 back for every
+            referral!
           </h6>
         </div>
         <div class="row">
@@ -270,7 +273,9 @@
               homes, vehicles, and businesses throughout Greater Victoria. From
               kitchens and bathrooms to BBQs, luggage, and upholstery, we steam
               everything using high-pressure, chemical-free technology that
-              kills 99.9% of bacteria. We’re here to work along side your house cleaner and to make maintaining cleanliness in your home our top priority.
+              kills 99.9% of bacteria. We’re here to work along side your house
+              cleaner and to make maintaining cleanliness in your home our top
+              priority.
             </p>
 
             <p class="text-center">
@@ -450,6 +455,7 @@
               Website built by
               <a href="https://krakenthekode.com">Kraken The Kode</a>
             </p>
+            <p>We are not associated with Valve or the Steam Gaming Platform</p>
           </div>
         </div>
         <hr />
@@ -470,7 +476,7 @@
       // Initialize Bootstrap popovers
       document.addEventListener("DOMContentLoaded", function () {
         const popoverTriggerList = [].slice.call(
-          document.querySelectorAll('[data-bs-toggle="popover"]')
+          document.querySelectorAll('[data-bs-toggle="popover"]'),
         );
         const popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
           return new bootstrap.Popover(popoverTriggerEl);

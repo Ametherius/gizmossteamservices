@@ -16,10 +16,6 @@ export const specialty = [
     price: "$129-$179",
   },
   {
-    service: "BBQ Degrease",
-    price: "$129-$189",
-  },
-  {
     service: "Window Tracks (Whole Home)",
     price: "$129-$199",
   },

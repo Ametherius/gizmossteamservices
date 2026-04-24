@@ -3,6 +3,7 @@ export const roomPrices = [
     title: "Living/Bedroom Refresh",
     icon: "fa-solid fa-couch mb-4 fs-1",
     style: "card room-card",
+    tagline: "",
     price: 179,
     list: [
       "Carpet or Floor Steam (includes prevacuum of area)",
@@ -15,6 +16,7 @@ export const roomPrices = [
   {
     title: "Kitchen Steam Deep Clean",
     icon: "fa-solid fa-kitchen-set mb-4 fs-1",
+    tagline: "",
     style: "card room-card",
     price: 179,
     list: [
@@ -32,6 +34,7 @@ export const roomPrices = [
     title: "Bathroom Steam Sanitize",
     icon: "fa-solid fa-toilet mb-4 fs-1",
     style: "card room-card",
+    tagline: "",
     price: 199,
     list: [
       "Tile & Grout",
@@ -45,6 +48,7 @@ export const roomPrices = [
     title: "Stairway to Heaven Steam",
     icon: "fa-solid fa-stairs mb-4 fs-1",
     style: "card room-card",
+    tagline: "",
     price: 199,
     list: [
       "Vacuum and Steam of Stairs (Hardwood or Carpet)",
@@ -56,6 +60,7 @@ export const roomPrices = [
     title: "Home Gym Deep Steam",
     icon: "fa-solid fa-dumbbell mb-4 fs-1",
     style: "card room-card",
+    tagline: "",
     price: 299,
     list: [
       "All Equipment and High Touch Areas",
@@ -68,6 +73,7 @@ export const roomPrices = [
     title: "Whole Home Steam Reset",
     icon: "fa-solid fa-house mb-4 fs-1",
     style: "card room-card",
+    tagline: "",
     price: "399 starting price",
     list: [
       "Condo (1-2 Bed): $399",
