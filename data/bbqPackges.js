@@ -23,7 +23,7 @@ export const bbqPackages = [
     ],
   },
   {
-    title: "The Full Restore (5-6 hour job)",
+    title: "The Full Restore (5-6 hours)",
     icon: "fa-solid fa-recycle mb-4 fs-1",
     tagline:
       "Brings heavily neglected BBQ's back to life with intensive restoration, stronger heat performance, and safer, more even grilling",
